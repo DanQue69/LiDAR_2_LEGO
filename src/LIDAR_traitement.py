@@ -770,3 +770,4 @@ if __name__ == "__main__":
     print(f"\n=== TEST TERMINÉ AVEC SUCCÈS ===")
     print(f"Fichier généré : {nom_sortie}")
     print("Ouvrez ce fichier dans LDView ou stud.io pour voir le résultat avec piliers et corrections.")
+    

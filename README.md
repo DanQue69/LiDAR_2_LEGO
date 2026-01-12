@@ -24,7 +24,7 @@ LiDAR_2_LEGO/
 ├── data/                      # Dossier destiné aux fichiers .laz d'entrée
 │                              # Placez votre fichier .laz ici
 │                              
-├── docs/                      # Documentation technique, rapports et livrables
+├── docs/                      # Documentation, rapports, workflow et livrables
 │ 
 ├── outputs/                   # Dossier généré automatiquement contenant les résultats (modèles bruts, traités, finales, etc...) 
 │

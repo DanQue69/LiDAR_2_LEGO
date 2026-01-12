@@ -177,4 +177,3 @@ def get_neighbors(brick, bricks):
         if can_merge(brick, b):
             neigh.append(b)
     return neigh
-    

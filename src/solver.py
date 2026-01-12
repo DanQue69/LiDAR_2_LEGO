@@ -409,5 +409,3 @@ if __name__ == "__main__":
         print("Ce modèle contient la structure optimisée (piliers) ET les briques fusionnées.")
 
         print_brick_stats(optimized_bricks)
-
-

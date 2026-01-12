@@ -256,3 +256,4 @@ if __name__ == "__main__":
     print(briques_gris[:5])  
     print("\n\n")
     print(briques_parsed[:5])
+    

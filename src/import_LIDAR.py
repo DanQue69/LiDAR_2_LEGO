@@ -21,3 +21,4 @@ def laz_to_las(file_path):
     las = laspy.read(str(file_path), laz_backend=laspy.LazBackend.Laszip)
 
     return las
+    
