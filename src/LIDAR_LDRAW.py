@@ -233,5 +233,3 @@ if __name__ == "__main__":
     # voxel_LDRAW(counts, nom_fichier=output_path_test / "modele_echantillon_LDRAW.ldr")
     # === Version avec classification ===
     voxel_LDRAW_classif(counts, class_maj, nom_fichier=output_path_test / "modele_echantillon_classif.ldr")
-
-    

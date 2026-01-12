@@ -208,3 +208,4 @@ def total_cost_function(bricks, C1=1.0, C2=1.0, C3=1.0):
         total_cost += (C1 * P1) + (C2 * P2) + (C3 * P3)
 
     return total_cost
+    

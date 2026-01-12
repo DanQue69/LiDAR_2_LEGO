@@ -348,5 +348,3 @@ if __name__ == "__main__":
     LIDAR_couches_LEGO_export(test_LIDAR_numpy, taille_xy=1.0, lego_ratio=5/3, densite_min=1, prefixe_sauvegarde="layer_LEGO")
     # === Version LEGO LDRAW ===
     LIDAR_couches_LEGO_LDRAW_export(test_LIDAR_numpy, taille_xy=1.0, lego_ratio=1.2, densite_min=1, prefixe_sauvegarde="layer_LDRAW")
-
-

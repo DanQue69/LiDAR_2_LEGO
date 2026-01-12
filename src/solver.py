@@ -90,7 +90,7 @@ def print_brick_stats(bricks):
 
 def export_to_ldr(bricks, filename):
     """Génère le fichier .ldr final avec positionnement corrigé."""
-    header = ["0 Optimized LEGO Model\n", "0 Name: " + str(filename) + "\n", "0 Author: Solver Smart V4\n"]
+    header = ["0 Optimized LEGO Model\n", "0 Name: " + str(filename) + "\n", "0 Author: Greedy Solver\n"]
     lines = []
     
     # Paramètres LDraw

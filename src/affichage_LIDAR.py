@@ -155,12 +155,3 @@ if __name__ == "__main__":
             print("Valeur incorrecte, affichage des 5 premiers points par défaut.")
 
         afficher_exemple_points(las, n)
-
-
-
-
-
-
-
-
-

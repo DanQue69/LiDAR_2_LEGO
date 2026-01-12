@@ -134,7 +134,7 @@ PARAM_CORRECTION = {
 ACTIVER_FILTRE_CLASSES = True
 PARAM_FILTRE_CLASSES = {
     # 1:Non Classé, 2:Sol, 3:Végétation basse, 4:Végétation moyenne, 5:Végétation haute, 6:Bati, 9:Eau, 17:Tablier de pont, 64:Sursol pérenne, 66:Points virtuels, 67:Divers - bâtis
-    "classes_gardees": [1, 2, 3, 4, 5, 6] 
+    "classes_gardees": [1, 2, 3, 4, 5, 6, 9, 17, 64, 66, 67] 
 }
 
 # C. Suppression du bruit volant 
@@ -165,6 +165,7 @@ PARAM_REMPLISSAGE = {
 # Activez (True) ou désactivez (False) cette étape.
 # Calculer le score de solidité (peut être long sur gros modèles)
 CALCULER_COUT_STRUCTUREL = True
+
 
 
 # ==========================================
@@ -260,10 +261,11 @@ if __name__ == "__main__":
 
     print(f"\n=== DÉMARRAGE DU TRAITEMENT : {NOM_FICHIER} ===")
     print(f"   Mode d'import : {MODE_IMPORT}")
-    print(f"   Mode workflow : {MODE_WORKFLOW}")
-    print(f"   Visuel        : {VISUALISATION}")
-    if VISUALISATION == "COULEUR":
-        print(f"   Mode couleur  : {MODE_COULEUR}")
+    if MODE_IMPORT != "AFFICHAGE_INFO_LIDAR":
+        print(f"   Mode workflow : {MODE_WORKFLOW}")
+        print(f"   Visuel        : {VISUALISATION}")
+        if VISUALISATION == "COULEUR":
+            print(f"   Mode couleur  : {MODE_COULEUR}")
 
 
 
@@ -275,6 +277,7 @@ if __name__ == "__main__":
     print("1. Chargement des données...")
 
     if MODE_IMPORT == "AFFICHAGE_INFO_LIDAR":
+        # Affichage des informations du fichier LIDAR
         las = laz_to_las(str(fichier_entree))
         afficher_header(las)
         afficher_coordonnees_systeme(las)

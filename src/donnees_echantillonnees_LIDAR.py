@@ -220,4 +220,3 @@ if __name__ == "__main__":
     print(f"Nombre de points retenus : {len(LIDAR_numpy_rect)}")
     print(f"Taille du rectangle : {longueur_x}x{longueur_y} m")
     print(f"\n{LIDAR_numpy_rect}\n")
-

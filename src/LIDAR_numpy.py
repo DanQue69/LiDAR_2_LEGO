@@ -140,3 +140,4 @@ if __name__ ==  "__main__" :
         tableau_point_utile = LIDAR_numpy_utile(las)                                       
         print("\n=== Aperçu des 5 premiers points (UTILE - Classif + x,y,z) ===")
         print(tableau_point_utile[:5])
+        
