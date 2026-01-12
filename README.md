@@ -39,7 +39,7 @@ LiDAR_2_LEGO/
 │   ├── brique_merge.py                    # Conversion Voxels -> Brick
 │   ├── merge.py                           # Def Brick et règles fusion
 │   ├── cost_function.py                   # Fonction coût 
-│   └── solver.py                          # Algorithme optimisation (Greedy Stripe)
+│   └── solver.py                          # Algorithme optimisation 
 │
 ├── main.py                    # Point d'entrée principal (Configuration & Exécution)
 ├── requirements.txt           # Liste des dépendances Python à installer sur votre machine
