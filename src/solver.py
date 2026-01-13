@@ -19,6 +19,7 @@ from LIDAR_numpy import LIDAR_numpy_utile
 from LIDAR_couches import LIDAR_couches, LIDAR_couches_LEGO, LIDAR_couches_LEGO_LDRAW
 from LIDAR_LDRAW import voxel_LDRAW, voxel_LDRAW_classif
 
+import merge
 from merge import Brick, merge_bricks, merge_bricks_side, VALID_SIZES
 from collections import defaultdict, Counter
 from cost_function import total_cost_function
@@ -148,7 +149,7 @@ def get_best_partition(total_length, width_ref):
     remaining = total_length
     
     valid_lengths = []
-    for (l, w) in VALID_SIZES:
+    for (l, w) in merge.VALID_SIZES:
         if w == width_ref: valid_lengths.append(l)
         if l == width_ref: valid_lengths.append(w)
     
